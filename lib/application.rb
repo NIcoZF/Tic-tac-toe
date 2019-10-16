@@ -1,9 +1,11 @@
 
 $:.unshift File.expand_path('./../lib', __FILE__)
 require 'game'
+require 'board'
 
 class Application
   def initialize
-    Game.new
+    @game = Game.new
+    @game.turn
   end
 end
