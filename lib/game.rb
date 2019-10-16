@@ -24,7 +24,7 @@ class Game
       Show.new.show_board(@board)
       @board.play_turn(@current_player)
 
-      if @board.victory?(@current_player, @status)
+      if @board.victory?(@current_player)
         @status = @current_player
         puts ""
         Show.new.show_board(@board)

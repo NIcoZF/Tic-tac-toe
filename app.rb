@@ -5,8 +5,7 @@ Bundler.require
 
 $LOAD_PATH.unshift File.expand_path('lib', __dir__)
 require 'application'
-require 'board'
 
 
-Application.new
+Application.new.perform
 

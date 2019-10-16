@@ -67,7 +67,7 @@ class Board
     end
   end
 
-  def victory?(current_player, status)
+  def victory?(current_player)
     if (@a1.value == @a2.value) && (@a2.value == @a3.value) && (@a1.value != '.')
       puts "#{current_player.name} a gagné !\n"
       true

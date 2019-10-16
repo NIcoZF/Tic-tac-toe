@@ -4,7 +4,7 @@ require 'game'
 require 'board'
 
 class Application
-  def initialize
+  def perform
     @game = Game.new
     @game.turn
   end
