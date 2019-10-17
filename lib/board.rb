@@ -25,7 +25,7 @@ class Board
   end
 
   def play_turn(current_player)
-    puts "A ton tour #{current_player.name}"
+    puts "\nA ton tour #{current_player.name}"
     puts 'Quelle case veux tu jouer ?'
     print '>> '
     choice = gets.chomp.upcase
